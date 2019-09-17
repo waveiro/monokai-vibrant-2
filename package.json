@@ -1,0 +1,21 @@
+{
+    "name": "monokai-vibrant-2",
+    "displayName": "monokai-vibrant-2",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "waveiro",
+                "uiTheme": "vs-dark",
+                "path": "./themes/waveiro-color-theme.json"
+            }
+        ]
+    }
+}
