@@ -60,7 +60,7 @@
       "name": "Number",
       "scope": "constant.numeric",
       "settings": {
-        "foreground": "#D91872"
+        "foreground": "#E373CE"
       }
     },
     {
@@ -79,17 +79,10 @@
     },
     {
       "name": "Built-in constant",
-      "scope": "constant.language",
+      "scope": ["constant.language", "constant.language.boolean"],
       "settings": {
-        "foreground": "#19D1E5"
-      }
-    },
-    {
-      "name": "Boolean constants",
-      "scope": "constant.language.boolean",
-      "settings": {
-        "foreground": "#00BFFF"
-        // "fontStyle": "italic"
+        "foreground": "#FF3F4F",
+        "fontStyle": "italic"
       }
     },
     {
@@ -109,11 +102,7 @@
     },
     {
       "name": "Variable",
-      "scope": [
-        "variable.readwrite",
-        "variable.readwrite.other.block",
-        "variable.other.readwrite.ts"
-      ],
+      "scope": ["variable.readwrite", "variable.readwrite.other.block"],
       "settings": {
         "foreground": "#61afef"
       }
@@ -122,8 +111,7 @@
       "name": "Keyword",
       "scope": ["keyword", "keyword.operator.logical", "keyword.operator.constructor"],
       "settings": {
-        "foreground": "#FF3F4F",
-        "fontStyle": "italic"
+        "foreground": "#FF3F4F"
       }
     },
     {
@@ -156,10 +144,19 @@
         "entity.name.module",
         "entity.name.type",
         "storage.identifier",
-        "support.class"
+        "support.class",
+        "entity.other.inherited-class",
+        "entity.other.inherited-class.ts"
       ],
       "settings": {
         "foreground": "#61afef"
+      }
+    },
+    {
+      "name": "Interfaces TS",
+      "scope": ["entity.name.type.interface.ts"],
+      "settings": {
+        "foreground": "#19D1E5"
       }
     },
     {
@@ -170,17 +167,21 @@
       }
     },
     {
+      "name": "Variable Name Usage",
+      "scope": [
+        "variable.other.object.property.ts",
+        "variable.other.object.ts",
+        "variable.other.readwrite.ts"
+      ],
+      "settings": {
+        "foreground": "#61afef"
+      }
+    },
+    {
       "name": "Other variable",
       "scope": ["variable.other.property", "variable.other.block"],
       "settings": {
         "foreground": "#f8f8f0"
-      }
-    },
-    {
-      "name": "Inherited class",
-      "scope": "entity.other.inherited-class",
-      "settings": {
-        "foreground": "#81F900"
       }
     },
     {
@@ -238,6 +239,17 @@
       "settings": {
         "foreground": "#00BFFF",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "css class",
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.parent-selector-suffix.css"
+      ],
+      "settings": {
+        "foreground": "#E8DC00",
+        "fontStyle": ""
       }
     },
     {
@@ -319,10 +331,16 @@
         "constant.numeric.less",
         "constant.numeric.sass",
         "keyword.other.unit.css ",
+        "keyword.other.unit.px.css",
+        "keyword.other.unit.em.css",
+        "keyword.other.unit.rem.css",
+        "keyword.other.unit.vh.css",
+        "keyword.other.unit.vw.css",
+        "support.constant.property-value.css",
         "constant.other.color.rgb-value"
       ],
       "settings": {
-        "foreground": "#C0D6E7",
+        "foreground": "#2196F3",
         "fontStyle": ""
       }
     },
