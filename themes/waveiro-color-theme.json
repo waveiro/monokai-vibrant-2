@@ -25,7 +25,7 @@
     },
     {
       "name": "String",
-      "scope": "string",
+      "scope": ["string", "meta.attribute-selector.scss"],
       "settings": {
         "foreground": "#FFD945"
       }
@@ -109,7 +109,7 @@
     },
     {
       "name": "Keyword",
-      "scope": ["keyword", "keyword.operator.logical", "keyword.operator.constructor"],
+      "scope": ["keyword", "keyword.operator.logical", "keyword.operator.constructor", "keyword.operator.bitwise"],
       "settings": {
         "foreground": "#FF3F4F"
       }
@@ -120,6 +120,22 @@
       "settings": {
         "foreground": "#FF3F4F",
         "fontStyle": "italic"
+      }
+    },
+	{
+      "name": "Keyword Operator",
+      "scope": ["keyword.operator.type", "keyword.operator.assignment", "keyword.operator.relational"],
+      "settings": {
+        "foreground": "#FF3F4F",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Keyword Operator Logical",
+      "scope": "keyword.operator.logical.ts",
+      "settings": {
+        "foreground": "#FF3F4F",
+        "fontStyle": ""
       }
     },
     {
